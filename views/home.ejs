@@ -108,8 +108,8 @@
             loader.style.display = "none";
             if (data.answer) {
                 let resp = data.answer
-                console.log(resp)
-                responseDiv.textContent = resp.slice(0, -100); // 100 is the extra response in the end, removing it
+                responseDiv.textContent = resp;
+                // responseDiv.textContent = resp.slice(0, -100); // 100 is the extra response in the end, removing it
             } else {
                 responseDiv.textContent = "No response from the chatbot.";
             }
